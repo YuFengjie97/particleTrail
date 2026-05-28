@@ -2,7 +2,7 @@ import './style.css'
 import { initScene, scene, camera } from './world/scene'
 import * as THREE from 'three'
 import {setEnv} from './world/envMap'
-import GlowCrystal from './world/glowCrystal'
+import particleTrail from './world/particleTrail'
 import { setLight } from './world/light'
 
 
@@ -15,7 +15,7 @@ import { setLight } from './world/light'
   scene.add(axesHelper)
 
   setLight()
-  setEnv()
+  // setEnv()
 
-  GlowCrystal()
+  particleTrail()
 })()
